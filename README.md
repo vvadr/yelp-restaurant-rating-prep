@@ -14,6 +14,7 @@ data/interim/      Intermediate parquet files, ignored by Git
 data/processed/    Final clean parquet output
 docs/              Lab reference PDF
 reports/           Findings report and generated figures
+notebooks/         Executed class-by-class lab notebooks
 scripts/           Runnable project commands
 src/yelp_lab/      Reusable pipeline code
 ```
@@ -52,6 +53,23 @@ Optional examples:
 python scripts/run_pipeline.py --city Tampa
 python scripts/run_pipeline.py --city Philadelphia --open-only
 python scripts/run_pipeline.py --review-chunksize 50000
+```
+
+## Class Notebooks
+
+The `notebooks/` folder contains executed notebooks for every PDF class:
+
+- Class 1: Data Cleaning
+- Class 2: Encoding and Scaling
+- Class 3: Feature Engineering
+- Class 4: Feature Selection
+- Class 5: Pipelines
+- Class 6: End-to-End Lab
+
+Each notebook includes the class goal, tasks, 3+ exploratory charts, and 1 explanatory chart for Priya. To regenerate them:
+
+```powershell
+python scripts/create_class_notebooks.py
 ```
 
 ## Final Schema

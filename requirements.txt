@@ -3,5 +3,9 @@ numpy
 pyarrow
 scikit-learn
 matplotlib
+seaborn
 joblib
-
+nbformat
+nbclient
+ipykernel
+notebook
