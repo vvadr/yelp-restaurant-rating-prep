@@ -1,0 +1,17 @@
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Yelp raw and generated data are too large for GitHub.
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/processed/yelp_restaurants_clean.parquet
+
+# Local model artifacts.
+*.joblib
